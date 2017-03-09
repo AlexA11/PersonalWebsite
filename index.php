@@ -1,13 +1,16 @@
+<!DOCTYPE html>
+<html lang="{{ config('app.locale') }}">
 <head>
   <title>Alex Ash</title>
   <link rel="shortcut icon" type="image/x-icon" href="images/my-logo.png" />
   <link rel="stylesheet" type="text/css" href="./node_modules/semantic-ui/dist/semantic.min.css">
-<script
-  src="https://code.jquery.com/jquery-3.1.1.min.js"
-  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-  crossorigin="anonymous"></script>
-<script src="node_modules/semantic-ui/dist/semantic.min.js"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+  <script src="node_modules/semantic-ui/dist/semantic.min.js"></script>
 </head>
+<body>
 <div class="ui black inverted vertical header">
     <div class="ui inverted segment">
       <div class="ui inverted secondary pointing menu">
@@ -83,3 +86,5 @@
     </div>
   </div>
 </div>
+<body>
+</html>

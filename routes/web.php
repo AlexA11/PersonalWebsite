@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('master', function() {
+	return view('layouts/master');
+});
+
 Route::get('contact', function() {
-	return view('contact');
-})
+	return view('/contact');
+});
