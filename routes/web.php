@@ -22,3 +22,7 @@ Route::get('master', function() {
 Route::get('contact', function() {
 	return view('/contact');
 });
+
+Route::get('projects', function() {
+	return view('/projects');
+});

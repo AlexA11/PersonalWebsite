@@ -1,0 +1,20 @@
+.space-above {
+	margin-top: 150px;
+}
+
+.space-above-small {
+	margin-top: 50px;
+}
+
+.space-below-small {
+	margin-bottom: 50px;
+}
+
+.space-below {
+	margin-bottom: 150px;
+}
+
+.main-banner {
+	background-image: url('../images/splash-pic.jpg') !important;
+	background-size: cover !important;
+}
