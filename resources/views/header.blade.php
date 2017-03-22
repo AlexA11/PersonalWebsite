@@ -10,7 +10,7 @@
     crossorigin="anonymous"></script>
   <script src="{{ URL::asset('/js/semantic.min.js') }}"></script>
 </head>
-<body class="pushable">
+<body class="grey-background">
 <div class="ui black inverted vertical header" style="margin-bottom: 0px;">
     <div class="ui inverted segment">
       <div class="ui inverted secondary pointing menu">

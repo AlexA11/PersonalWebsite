@@ -63,7 +63,7 @@
 	</div>
 	<div class="ui vertical stripe intro segment">
 	<h3>Drop a line</h3>
-		<form class="ui form" method="POST">
+		<form class="ui form" method="POST" >
 		  <div class="field">
 		    <label>Your Name</label>
 		    <input type="text" name="name" placeholder="Name" required="required">

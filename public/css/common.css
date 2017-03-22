@@ -18,3 +18,7 @@
 	background-image: url('../images/splash-pic.jpg') !important;
 	background-size: cover !important;
 }
+
+.grey-background {
+	background-color: rgba(84, 84, 84, 0.13)!important
+}
