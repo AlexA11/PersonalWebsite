@@ -22,3 +22,23 @@
 .grey-background {
 	background-color: rgba(84, 84, 84, 0.13)!important
 }
+
+.overlay {
+	width: 100%;
+}
+
+.visibility.example .overlay {
+	width: 100%;
+  background-color: #FFFFFF;
+  padding: 0em;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  transition: all 0.5s ease;
+  background: transparent;
+}
+/* change style */
+.visibility.example .fixed.overlay {
+	width: 100%;
+  position: fixed;
+  padding: 1em;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+}

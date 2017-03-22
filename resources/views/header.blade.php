@@ -9,23 +9,26 @@
     integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
     crossorigin="anonymous"></script>
   <script src="{{ URL::asset('/js/semantic.min.js') }}"></script>
+  <script src="{{ URL::asset('/js/common.js') }}"></script>
 </head>
 <body class="grey-background">
-<div class="ui black inverted vertical header" style="margin-bottom: 0px;">
-    <div class="ui inverted segment">
-      <div class="ui inverted secondary pointing menu">
-        <a class="item">
-          <img src="{{ URL::asset('/images/my-logo.png') }}">
-        </a>
-        <a class="{{ Request::is('master') ? 'active ' : '' }} item" href="master">
-          Home
-        </a>
-        <a class="{{ Request::is('projects') ? 'active ' : '' }} item" href="projects">
-          Projects
-        </a>
-        <a class="{{ Request::is('contact') ? 'active ' : '' }}item" href="contact">
-          Contact
-        </a>
+<div class="overlay">
+  <div class="ui black inverted vertical header" style="margin-bottom: 0px;">
+      <div class="ui inverted segment">
+        <div class="ui inverted secondary pointing menu">
+          <a class="item">
+            <img src="{{ URL::asset('/images/my-logo.png') }}">
+          </a>
+          <a class="{{ Request::is('master') ? 'active ' : '' }} item" href="master">
+            Home
+          </a>
+          <a class="{{ Request::is('projects') ? 'active ' : '' }} item" href="projects">
+            Projects
+          </a>
+          <a class="{{ Request::is('contact') ? 'active ' : '' }}item" href="contact">
+            Contact
+          </a>
+        </div>
       </div>
-    </div>
+  </div>
 </div>
