@@ -26,3 +26,8 @@ Route::get('contact', function() {
 Route::get('projects', function() {
 	return view('/projects');
 });
+
+Route::get('contact', 
+  ['as' => 'contact', 'uses' => 'AboutController@create']);
+Route::post('contact', 
+  ['as' => 'contact_store', 'uses' => 'AboutController@store']);

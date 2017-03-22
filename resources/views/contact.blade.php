@@ -63,7 +63,7 @@
 	</div>
 	<div class="ui vertical stripe intro segment">
 	<h3>Drop a line</h3>
-		<form class="ui form" method="POST" >
+		<!-- <form class="ui form" method="POST" >
 		  <div class="field">
 		    <label>Your Name</label>
 		    <input type="text" name="name" placeholder="Name" required="required">
@@ -81,7 +81,44 @@
 			    <textarea rows="2" name="message" class="space-below-small" placeholder="Place message here" required="true"></textarea>
 		  </div>
 	  		<button class="ui button blue" type="submit">Send<i class="right send icon"></i></button>
-		</form> 
+		</form>  -->
+		<ul>
+    @foreach($errors->all() as $error)
+        <li>{{ $error }}</li>
+    @endforeach
+</ul>
+
+	{!! Form::open(array('route' => 'contact', 'class' => 'ui form')) !!}
+
+	<div class="field">
+	    {!! Form::label('Your Name') !!}
+	    {!! Form::text('name', null, 
+	        array('required', 
+	              'class'=>'ui form form-control', 
+	              'placeholder'=>'Your name')) !!}
+	</div>
+
+	<div class="field">
+	    {!! Form::label('Your E-mail Address') !!}
+	    {!! Form::text('email', null, 
+	        array('required', 
+	              'class'=>'form-control', 
+	              'placeholder'=>'Your e-mail address')) !!}
+	</div>
+
+	<div class="field">
+	    {!! Form::label('Your Message') !!}
+	    {!! Form::textarea('message', null, 
+	        array('required', 
+	              'class'=>'form-control', 
+	              'placeholder'=>'Your message')) !!}
+	</div>
+
+	<div class="field">
+	    {!! Form::submit('Contact Us!', 
+	      array('class'=>'ui button blue')) !!}
+	</div>
+	{!! Form::close() !!}
 	</div>
 	<div class="ui vertical stripe intro segment">
 	<h3>Social Media</h3>
